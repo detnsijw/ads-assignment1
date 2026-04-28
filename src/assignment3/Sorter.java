@@ -5,8 +5,7 @@ import java.util.Random;
 public class Sorter {
     public void basicSort(int[] arr) {
         int n = arr.length;
-
-        for (int i = 0; i < n - 1; i++) {
+         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
@@ -40,7 +39,6 @@ public class Sorter {
                 arr[j] = temp;
             }
         }
-
         int temp = arr[i + 1];
         arr[i + 1] = arr[high];
         arr[high] = temp;
@@ -58,7 +56,6 @@ public class Sorter {
     public int[] generateRandomArray(int size) {
         Random rand = new Random();
         int[] arr = new int[size];
-
         for (int i = 0; i < size; i++) {
             arr[i] = rand.nextInt(1000); // numbers 0-999
         }

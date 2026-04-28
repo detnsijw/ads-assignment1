@@ -68,11 +68,11 @@ Each test used:
 
 ### Example Results
 
-| Size | Bubble Sort    | Quick Sort | Binary Search |
-| ---- | -------------- | ---------- | ------------- |
-| 10   | Slow           | Fast       | Very Fast     |
-| 100  | Very Slow      | Fast       | Very Fast     |
-| 1000 | Extremely Slow | Very Fast  | Instant       |
+| Size | Bubble Sort | Quick Sort | Binary Search |
+| ---- |-------------|------------|---------------|
+| 10   | 9600        | 7400       | 1900          |
+| 100  | 184000      | 23400      | 900           |
+| 1000 | 4714900     | 370700     | 800           |
 
 ---
 
