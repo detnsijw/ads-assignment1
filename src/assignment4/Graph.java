@@ -1,7 +1,6 @@
 package assignment4;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -62,7 +61,6 @@ public class Graph {
         Set<Integer> visited = new HashSet<>();
         Queue<Integer> queue = new LinkedList<>();
 
-        // BFS uses a queue. It visits all close neighbors first, then moves level by level.
         visited.add(start);
         queue.add(start);
 
@@ -87,7 +85,6 @@ public class Graph {
         List<Integer> traversalOrder = new ArrayList<>();
         Set<Integer> visited = new HashSet<>();
 
-        // DFS goes as deep as possible before returning back to other branches.
         dfsRecursive(start, visited, traversalOrder);
         return traversalOrder;
     }

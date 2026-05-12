@@ -64,12 +64,10 @@ public class Experiment {
             graph.addVertex(new Vertex(i));
         }
 
-        // Chain edges guarantee that every vertex can be reached from vertex 0.
         for (int i = 0; i < size - 1; i++) {
             graph.addEdge(i, i + 1);
         }
 
-        // Additional deterministic edges make the graph more realistic but still reproducible.
         Random random = new Random(42 + size);
         int extraEdges = size * 2;
 
